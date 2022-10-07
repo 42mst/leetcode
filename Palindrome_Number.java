@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Solution {
+class Palindrome_Number {
     public boolean isPalindrome(int x) {
         
         int remainder, sum = 0, temp; 
@@ -32,7 +32,7 @@ class Solution {
 
         int num = sc.nextInt();
 
-        Solution s = new Solution();
+        Palindrome_Number s = new Palindrome_Number();
         if(s.isPalindrome(num)){
             System.out.println("True");
         } else {
