@@ -28,15 +28,15 @@ class Palindrome_Number {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            int num = sc.nextInt();
 
-        int num = sc.nextInt();
-
-        Palindrome_Number s = new Palindrome_Number();
-        if(s.isPalindrome(num)){
-            System.out.println("True");
-        } else {
-            System.out.println("False");
+            Palindrome_Number s = new Palindrome_Number();
+            if(s.isPalindrome(num)){
+                System.out.println("True");
+            } else {
+                System.out.println("False");
+            }
         }
     }
 }
